@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Luiz Felipe de Souza Barbosa",
+        "phone": "22999999999",
+        "email": "luiz@gmail.com",
+        "is_favorit": true,
+        "is_blocked": false
+    }
+]
