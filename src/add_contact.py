@@ -1,11 +1,8 @@
+from type_classes import Contact
 from typing import TypedDict, List
-from json import dump, dumps, load
-from pathlib import Path
-
-
-current_file_path = Path(__file__).parent.resolve()
-
-print(f"current_file_path: {current_file_path}")
+from json import dump, load
+from CONTANTS import path_to_db
+from utils.get_data import get_data
 
 class AddContactParams(TypedDict):
   name: str
@@ -15,9 +12,7 @@ class AddContactParams(TypedDict):
 
 def add_contact(params:AddContactParams):
 
-  path_to_db = f'{current_file_path}/data/data.json'
-
-  new_contact = {
+  new_contact: Contact  = {
     "name": params['name'],
     "phone": params['phone'],
     "email": params["email"],
@@ -25,18 +20,13 @@ def add_contact(params:AddContactParams):
     "is_blocked": False
   }
 
-  with open(path_to_db,'r') as openfile:
-    data = list(load(openfile))
-
-  data.append(new_contact)
+  
+  contacts = get_data()
+  contacts.append(new_contact)
 
 
   with open(path_to_db, 'w') as outfile:
-    dump(data, outfile, indent=2)
-
-  
-
-
+    dump(contacts, outfile, indent=2)
 
   
 
