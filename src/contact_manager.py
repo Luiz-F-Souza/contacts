@@ -1,30 +1,25 @@
 from display_options import display_options_list
 from add_contact import add_contact
 from utils.handle_convert_int import handle_convert_int
-from utils.check_valid_option import check_valid_option
-
+from display_contacts import display_contacts
 
 
 def start():
 
     while True:
         display_options_list()
-        selected_option = handle_convert_int(input("Digite uma opção:"))
+        selected_option = handle_convert_int(input("Digite uma opção: "))
 
         if selected_option == None:
             continue
 
-        # is_valid_option = check_valid_option(selected_option)
-
-        # if is_valid_option == False:
-        #     continue
-
+        # Ver contatos
         if selected_option == 0:
-
+            display_contacts("all")
             continue
-
+        # Ver favoritos
         if selected_option == 1:
-
+            display_contacts("favorite")
             continue
 
         # ADD Contact
@@ -44,24 +39,48 @@ def start():
             })
 
             continue
-
+        # Adicionar Favorito
         if selected_option == 3:
+            display_contacts("not-favorite")
 
+            contact_to_fav = handle_convert_int(
+                input("Ordem do contato para favoritar: "))
+
+            if contact_to_fav == None:
+                print("\nOrdem selecionada não existe\n")
+                while True:
+                    want_to_try_again = True if handle_convert_int(
+                        input("Deseja tentar outra ordem? Digite 1 para sim: ")) == 1 else False
+
+                    if want_to_try_again == False:
+                        break
+                    contact_to_fav = handle_convert_int(
+                        input("Ordem do contato para favoritar: "))
+                    
+                    if contact_to_fav == None:
+                        continue
+                    else:
+                        break
+                    
+                print(f"\nContato ordem {contact_to_fav} favoritado")
             continue
 
+        # Editar contato
         if selected_option == 4:
 
             continue
-
+        # Deletar contato
         if selected_option == 5:
 
             continue
-
+        # Bloquear contato
         if selected_option == 6:
 
             continue
         if selected_option == 9:
             break
+
+        print("Digite um número válido dentre as opções")
 
     print("Programa finalizado com sucesso")
 
