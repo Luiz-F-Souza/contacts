@@ -1,5 +1,6 @@
 from display_options import display_options_list
 from add_contact import add_contact
+from manage_status import manage_status
 from utils.handle_convert_int import handle_convert_int
 from display_contacts import display_contacts
 
@@ -43,26 +44,12 @@ def start():
         if selected_option == 3:
             display_contacts("not-favorite")
 
-            contact_to_fav = handle_convert_int(
-                input("Ordem do contato para favoritar: "))
+            print("Digite números separados por espaço para favoritar vários. Ex: 12 32 43 23")
+            contacts_to_fav = input("Ordem do contato para favoritar: ")
 
-            if contact_to_fav == None:
-                print("\nOrdem selecionada não existe\n")
-                while True:
-                    want_to_try_again = True if handle_convert_int(
-                        input("Deseja tentar outra ordem? Digite 1 para sim: ")) == 1 else False
+            contacts_list = list(contacts_to_fav.split(" "))
 
-                    if want_to_try_again == False:
-                        break
-                    contact_to_fav = handle_convert_int(
-                        input("Ordem do contato para favoritar: "))
-                    
-                    if contact_to_fav == None:
-                        continue
-                    else:
-                        break
-                    
-                print(f"\nContato ordem {contact_to_fav} favoritado")
+            manage_status(contacts_list, "fav")
             continue
 
         # Editar contato
@@ -75,6 +62,15 @@ def start():
             continue
         # Bloquear contato
         if selected_option == 6:
+
+            display_contacts("not-blocked")
+
+            print("Digite números separados por espaço para favoritar vários. Ex: 12 32 43 23")
+            contacts_to_block = input("Ordem do contato para favoritar: ")
+
+            contacts_list = list(contacts_to_block.split(" "))
+
+            manage_status(contacts_list, "block")
 
             continue
         if selected_option == 9:
