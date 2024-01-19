@@ -4,8 +4,8 @@
 - [X] Should be able to add contact
     - Name, Phone, Email, isFavorite
 - [X] Should be able to see list of registered contacts
-- [ ] Should be able to edit a contact
+- [X] Should be able to edit a contact
 - [X] Should be able to favorite contacts
-- [ ] Should be able to see favorite contacts list
-- [ ] Should be able to delete a contact
-- [ ] Should be able to Block a contact or a Phone number
+- [X] Should be able to see favorite contacts list
+- [X] Should be able to delete a contact
+- [X] Should be able to Block a contact
