@@ -3,6 +3,8 @@ from add_contact import add_contact
 from manage_status import manage_status
 from utils.handle_convert_int import handle_convert_int
 from display_contacts import display_contacts
+from delete_contact import delete_contacts
+from edit_contact import edit_contact
 
 
 def start():
@@ -36,7 +38,7 @@ def start():
                 "name": name_to_register,
                 "phone": phone_to_register,
                 "email": email_to_register,
-                "is_favorit": is_favorite
+                "is_favorite": is_favorite
             })
 
             continue
@@ -54,12 +56,22 @@ def start():
 
         # Editar contato
         if selected_option == 4:
+            display_contacts("all")
+
+            edit_contact()
 
             continue
+
         # Deletar contato
         if selected_option == 5:
+            display_contacts("all")
 
+            print("Digite números separados por espaço para DELETAR vários. Ex: 12 32 43 23")
+            contacts_to_del = input("Ordem do contato para DELETAR: ")
+
+            delete_contacts(contacts_to_del)
             continue
+
         # Bloquear contato
         if selected_option == 6:
 
