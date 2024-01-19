@@ -8,7 +8,7 @@ class AddContactParams(TypedDict):
   name: str
   phone: str
   email: str
-  is_favorit: bool
+  is_favorite: bool
 
 def add_contact(params:AddContactParams):
 
@@ -16,7 +16,7 @@ def add_contact(params:AddContactParams):
     "name": params['name'],
     "phone": params['phone'],
     "email": params["email"],
-    "is_favorit": params["is_favorit"],
+    "is_favorite": params["is_favorite"],
     "is_blocked": False
   }
 

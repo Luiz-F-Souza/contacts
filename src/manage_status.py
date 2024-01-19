@@ -20,7 +20,7 @@ def manage_status(contacts_input: List[str], type: Literal["block","fav"]):
         if index < 0 or index > contacts.__len__():
             print(f"contato {order} fora do range atual")
         current_contact = contacts[index]
-        current_contact['is_favorit'] = True if type == 'fav' else False
+        current_contact['is_favorite'] = True if type == 'fav' else False
         current_contact['is_blocked'] = True if type == 'block' else False
 
     with open(path_to_db, 'w') as outfile:

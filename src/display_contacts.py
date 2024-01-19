@@ -13,7 +13,7 @@ def display_contacts(display: Literal["all", "favorite", "not-favorite", "not-bl
   
   for index, contact in enumerate(contacts):
     current_contact_order = index + 1
-    is_favorite = contact["is_favorit"]
+    is_favorite = contact["is_favorite"]
     is_blocked = contact["is_blocked"]
 
     if display == "favorite" and is_favorite == False:
