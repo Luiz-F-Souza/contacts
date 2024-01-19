@@ -1,9 +1,142 @@
 [
-    {
-        "name": "Luiz Felipe de Souza Barbosa",
-        "phone": "22999999999",
-        "email": "luiz@gmail.com",
-        "is_favorit": true,
-        "is_blocked": false
-    }
+  {
+    "name": "Luiz Felipe de Souza Barbosa",
+    "phone": "22999999999",
+    "email": "luizfelipesouza1998@outlook.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Ana Silva",
+    "phone": "21888888888",
+    "email": "ana@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Carlos Oliveira",
+    "phone": "21333333333",
+    "email": "carlos@gmail.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Mariana Santos",
+    "phone": "21999999999",
+    "email": "mariana@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Pedro Rocha",
+    "phone": "21222222222",
+    "email": "pedro@gmail.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Camila Lima",
+    "phone": "21777777777",
+    "email": "camila@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Fernando Costa",
+    "phone": "21444444444",
+    "email": "fernando@gmail.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Isabela Pereira",
+    "phone": "21555555555",
+    "email": "isabela@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Rafaela Oliveira",
+    "phone": "21666666666",
+    "email": "rafaela@gmail.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Gabriel Lima",
+    "phone": "21111111111",
+    "email": "gabriel@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Lucas Almeida",
+    "phone": "21000000000",
+    "email": "lucas@gmail.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Let\u00c3\u00adcia Santos",
+    "phone": "21999998888",
+    "email": "leticia@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Vin\u00c3\u00adcius Oliveira",
+    "phone": "21998887777",
+    "email": "vinicius@gmail.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Juliana Pereira",
+    "phone": "21997776666",
+    "email": "juliana@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Mateus Costa",
+    "phone": "21996665555",
+    "email": "mateus@gmail.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Bianca Lima",
+    "phone": "21995554444",
+    "email": "bianca@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Eduardo Rocha",
+    "phone": "21994443333",
+    "email": "eduardo@gmail.com",
+    "is_favorite": true,
+    "is_blocked": false
+  },
+  {
+    "name": "Amanda Silva",
+    "phone": "21993332222",
+    "email": "amanda@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Leonardo Oliveira",
+    "phone": "21992221111",
+    "email": "leonardo@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  },
+  {
+    "name": "Larissa Costa",
+    "phone": "21991110000",
+    "email": "larissa@gmail.com",
+    "is_favorite": false,
+    "is_blocked": true
+  }
 ]
